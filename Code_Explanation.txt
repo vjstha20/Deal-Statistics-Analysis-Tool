@@ -1,0 +1,40 @@
+The provided code implements the entire ETL (Extract, Transform, Load) process, analysis process, and visualization process for the Deal Statistics Analysis Tool project.
+
+1. ETL Process
+
+Extract:
+
+Data is loaded from CSV files into Pandas DataFrames.
+
+Transform:
+Missing values are forward-filled.
+Duplicates are removed.
+Date columns are converted to datetime format.
+Debt-equity ratio is calculated.
+
+Load:
+
+Cleaned data is saved back to new CSV files in the 'data/processed' directory.
+2. Analysis Process
+
+Merge Data:
+
+Deal statistics data is merged with industry averages.
+
+Calculate Metrics:
+
+Peers multiple is calculated by dividing the debt-equity ratio by the average debt-equity ratio for the industry.
+
+Save Results:
+
+The analysis results are saved to a CSV file in the 'data/processed' directory.
+3. Visualization Process
+
+Create Visualizations:
+
+Line plot of debt-equity ratio over time.
+Bar plot of peers multiples by industry.
+
+Save Visualizations:
+
+Visualizations are saved as PNG files in the 'reports' directory.
